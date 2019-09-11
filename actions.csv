@@ -1,0 +1,8 @@
+Name;Prev Screen;Next Screen;Button;prev precision;next precision;button precision;skip prev;skip next;skip button
+Open Crystal Dungeon;screen-home.png;screen-crystaldungeon.png;Open Crystal Dungeon;0.8;0.8;0.8;0;0;0
+Open Crystal Dungeon Sweep;screen-crystaldungeon.png;screen-crystaldungeonsweep.png;Open Crystal Dungeon Sweep;0.8;0.8;0.8;0;0;0
+Sweep Crystal Dungeon;screen-crystaldungeonsweep.png;screen-crystaldungeonsweep.png;Sweep Crystal Dungeon;0.95;0.95;0.95;0;0;0
+Open Proving Grounds;screen-home.png;screen-provinggrounds.png;Open Proving Grounds;0.95;0.95;0.95;0;0;0
+Sweep Proving Grounds;screen-provinggrounds.png;screen-provinggrounds.png;Sweep Proving Grounds;0.95;0.95;0.95;0;0;0
+Open Astrologer;screen-home.png;screen-astrologer.png;Open Astrologer;0.95;0.95;0.95;0;0;0
+Do Horoscope;screen-astrologer.png;screen-astrologer.png;Do Horoscope;0.95;0.95;0.95;0;0;0

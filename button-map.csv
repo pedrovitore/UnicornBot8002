@@ -1,0 +1,32 @@
+Name;x;y;width;height;gameWidth;gameHeight;xPercent;yPercent;widthPercent;heightPercent;File Name
+Open Crystal Dungeon;xxx;404;223;207;1336;752;-1.0000;0.5372;0.1669;0.2753;button-crystaldungeon.png
+Open Gold Purchase Screen;733;16;53;54;1336;752;0.5487;0.0213;0.0397;0.0718;button-opengoldpuchase.png
+Buy Gold;135;476;257;60;1336;752;0.1010;0.6330;0.1924;0.0798;button-buygold.png
+Open Crystal Dungeon Sweep;384;638;111;109;1336;752;0.2874;0.8484;0.0831;0.1449;button-opencrystaldungeonsweep.png
+Open Navigation Bar;1233;36;74;41;1348;758;0.9147;0.0475;0.0549;0.0541;button-opennavigationbar.png
+Close Navigation Bar;1241;30;61;39;1348;758;0.9206;0.0396;0.0453;0.0515;button-closenavigationbar.png
+Open Hero Page;1213;116;116;116;1348;758;0.8999;0.1530;0.0861;0.1530;button-openheropage.png
+Open Quest Page;1212;381;116;116;1348;758;0.8991;0.5026;0.0861;0.1530;button-openquestpage.png
+Open Friends Page;1212;508;116;116;1348;758;0.8991;0.6702;0.0861;0.1530;button-openfriendspage.png
+Open To Do List;1212;629;116;116;1348;758;0.8991;0.8298;0.0861;0.1530;button-opentodolist.png
+Sweep Crystal Dungeon;1111;618;111;109;1348;758;0.8242;0.8153;0.0823;0.1438;button-cd-sweepavailable.png
+Sweep Crystal Dungeon Running;1111;619;110;107;1348;758;0.8242;0.8166;0.0816;0.1412;button-cd-sweeprunning.png
+Sweep Crystal Dungeon Completed;1111;618;110;109;1348;758;0.8242;0.8153;0.0816;0.1438;button-cd-sweepcompleted.png
+Crystal Dungeon Chances Over;722;645;59;63;1348;758;0.5356;0.8509;0.0438;0.0831;button-cd-chancesover.png
+Return;46;11;96;93;1348;758;0.0341;0.0145;0.0712;0.1227;button-return.png
+Minimize Chat;461;598;86;33;1348;758;0.3420;0.7889;0.0638;0.0435;button-minimizechat.png
+Open War Guardian;313;510;148;199;1348;758;0.2322;0.6728;0.1098;0.2625;button-warguardian.png
+Go! Awaken 1;986;225;133;46;1348;758;0.7315;0.2968;0.0987;0.0607;button-goawaken.png
+Go! Awaken 2;986;465;133;46;1348;758;0.7315;0.6135;0.0987;0.0607;button-goawaken.png
+Click Awaken Essence;388;471;90;91;1348;758;0.2878;0.6214;0.0668;0.1201;
+Open Awaken Stage;296;467;354;124;1348;758;0.2196;0.6161;0.2626;0.1636;button-legendstage.png
+x3 Sweep;913;617;110;107;1348;758;0.6773;0.8140;0.0816;0.1412;button-x3sweep.png
+Sweep More (Legend);595;573;149;63;1348;758;0.4414;0.7559;0.1105;0.0831;button-sweepmore-legend.png
+Buy Sweep Chances;554;385;254;80;1348;758;0.4110;0.5079;0.1884;0.1055;button-buysweepchances.png
+Close Buy Sweep Chances Dialog;954;192;53;52;1348;758;0.7077;0.2533;0.0393;0.0686;button-closebuysweepchancesdialog.png
+Close Awaken Synth Page;1007;15;94;91;1348;758;0.7470;0.0198;0.0697;0.1201;button-closeawakensynthpage.png
+Close Hero Page;1201;35;77;74;1348;758;0.8909;0.0462;0.0571;0.0976;button-closeheropage.png
+Open Proving Grounds;xxx;276;200;139;1348;758;-1.0000;0.3641;0.1484;0.1834;button-openprovingrounds.png
+Sweep Proving Grounds;607;579;136;153;1348;758;0.4503;0.7639;0.1009;0.2018;button-sweepprovinggrounds.png
+Open Astrologer;xxx;489;118;139;1348;758;-1.0000;0.6451;0.0875;0.1834;button-astrologer.png
+Do Horoscope;1142;602;179;59;1348;758;0.8472;0.7942;0.1328;0.0778;button-dohoroscope.png
