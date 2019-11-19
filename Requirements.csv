@@ -1,0 +1,51 @@
+ActionName,CheckName,CheckType,Value
+Open Gold Purchase Screen,Open Gold Purchase Screen,BUTTON,0
+Buy Gold,Buy Gold,BUTTON,0
+Close Buy Gold,Close Buy Gold,BUTTON,0
+Claim FB Stamina,Facebook Claim All,OCR,0
+Open Navigation Bar,Open Navigation Bar,BUTTON,0
+Open Friends Page,Open Friends Page,BUTTON,0
+Open FB Friends,Open FB Friends,BUTTON,0
+Open Crystal Dungeon,Open Crystal Dungeon,BUTTON,0
+Open Crystal Dungeon Sweep Maxed,Open Crystal Dungeon Sweep Maxed,BUTTON,0
+Sweep Crystal Dungeon,Sweep Crystal Dungeon,BUTTON,0
+Sweep Crystal Dungeon Completed,Sweep Crystal Dungeon Completed,BUTTON,0
+Return,Return,BUTTON,0
+Send FB Stamina,Facebook Send All,OCR,0
+Open Arena,Open Arena,BUTTON,0
+Challenge Stronger Opponent,Challenge Stronger Opponent,BUTTON,0
+Open Crystal Spire,Open Crystal Spire,BUTTON,0
+Open Crystal Spire Sweep,Open Crystal Spire Sweep,BUTTON,0
+Sweep Crystal Spire,Sweep Crystal Spire,BUTTON,0
+Sweep Crystal Spire,Crystal Spire Free Sweeps,OCR,0
+Confirm Sweep Crystal Spire,Confirm Sweep Crystal Spire,BUTTON,0
+Sweep Crystal Spire Cancel Dialog,Sweep Crystal Spire Cancel Dialog,BUTTON,0
+Sweep Crystal Spire Close Dialog,Sweep Crystal Spire Close Dialog,BUTTON,0
+Close Crystal Spire,Close Crystal Spire,BUTTON,0
+Open Proving Grounds,Open Proving Grounds,BUTTON,0
+Sweep Proving Grounds,Sweep Proving Grounds,BUTTON,0
+Cancel Proving Grounds,Cancel Proving Grounds,BUTTON,0
+Open Academy,Open Academy,BUTTON,0
+Claim Iron,Claim Iron,BUTTON,0
+Claim Crystal,Claim Crystal,BUTTON,0
+Claim Silver,Claim Silver,BUTTON,0
+Claim Medicine,Claim Medicine,BUTTON,0
+Claim Academy Stamina,Claim Academy Stamina,BUTTON,0
+Close Academy,Close Academy,BUTTON,0
+Attack,Attack,BUTTON,0
+Open Commander Equips,Home,BUTTON,0
+Open Scepter,Screen Commander Equip,BUTTON,0
+Evolve Equip Tab,Evolve Equip Tab,BUTTON,0
+Select Material 3,Evolve Equip Tab Selected,BUTTON,0
+Select Material 2,Evolve Equip Tab Selected,BUTTON,0
+Select Material 1,Evolve Equip Tab Selected,BUTTON,0
+Synth Scroll Right,Synth Page,BUTTON,0
+Open Legend Stage Right,Open Legend Stage Right,BUTTON,0
+x3 Sweep,x3 Sweep,BUTTON,0
+x3 Sweep,Legend Stage Chances,OCR,3
+x3 Sweep,Stamina,OCR,36
+Stage Sweep Cancel,Stage Sweep Cancel,BUTTON,0
+Open Legend Stage Left Cut,Open Legend Stage Left Cut,BUTTON,0
+Close Synth Page,Close Synth Page,BUTTON,0
+Confirm No More Heroes,Confirm No More Heroes,BUTTON,0
+Wait Battle End,End Battle,BUTTON,0

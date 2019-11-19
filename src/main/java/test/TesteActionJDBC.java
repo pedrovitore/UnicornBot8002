@@ -4,14 +4,15 @@ import java.awt.AWTException;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import dao.NavigationActionDAO;
 import exception.ButtonNotFoundException;
 import exception.GameWindowNotFoundException;
 import exception.ScreenMismatchException;
 import jdbc.Database;
-import model.Button;
-import model.NavigationAction;
 import model.Routine;
+import old.Button;
+import old.NavigationAction;
+import old.NavigationActionDAO;
+import old.OldRoutine;
 
 public class TesteActionJDBC {
 
@@ -19,7 +20,7 @@ public class TesteActionJDBC {
 	public static void main(String[] args) throws SQLException, IOException, ButtonNotFoundException, GameWindowNotFoundException, AWTException, ScreenMismatchException, InterruptedException {
 		
 		//Button button = Database.getButtonMap("Open Crystal Dungeon");
-		Routine routine = new Routine();
+		OldRoutine routine = new OldRoutine();
 
 		routine.add(NavigationActionDAO.getNavigationAction("Open Astrologer"));
 		routine.add(NavigationActionDAO.getNavigationAction("Do Horoscope"));
@@ -29,7 +30,7 @@ public class TesteActionJDBC {
 
 	private static void sweepProvingGrounds() throws SQLException, IOException, ButtonNotFoundException,
 			GameWindowNotFoundException, AWTException, ScreenMismatchException, InterruptedException {
-		Routine routine = new Routine();
+		OldRoutine routine = new OldRoutine();
 
 		routine.add(NavigationActionDAO.getNavigationAction("Open Proving Grounds"));
 		routine.add(NavigationActionDAO.getNavigationAction("Sweep Proving Grounds"));
@@ -38,7 +39,7 @@ public class TesteActionJDBC {
 	}
 	
 	public static void sweepCrystalDungeon() throws SQLException, IOException, ButtonNotFoundException, GameWindowNotFoundException, AWTException, ScreenMismatchException, InterruptedException {
-		Routine routine = new Routine();
+		OldRoutine routine = new OldRoutine();
 		
 
 		routine.add(NavigationActionDAO.getNavigationAction("Open Crystal Dungeon"));

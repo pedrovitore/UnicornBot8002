@@ -9,7 +9,7 @@ import exception.GameWindowNotFoundException;
 import jna.UnicornWindowControl;
 import net.sourceforge.tess4j.TesseractException;
 
-public class ButtonCheck implements GameAction {
+public class ButtonCheck {
 
 	private String name;
 	private Double relativeX;
@@ -27,15 +27,13 @@ public class ButtonCheck implements GameAction {
 	 * @throws TesseractException
 	 * @throws InterruptedException 
 	 */
-	@Override
-	public Boolean execute() throws GameWindowNotFoundException, AWTException, InterruptedException {
+	public Boolean execute(Integer target, Rectangle targetButtonRectangle) throws GameWindowNotFoundException, AWTException, InterruptedException {
 		if (!UnicornWindowControl.isGameRunning()) {
 			throw new GameWindowNotFoundException("BlueStacks is not running!");
 		}
 
 		UnicornWindowControl.setForegroundWindowByTitle("BlueStacks");
 
-		Rectangle buttonRectangle = new Rectangle();
 		
 		if ( relativeX < 0 ) {
 			
@@ -46,7 +44,11 @@ public class ButtonCheck implements GameAction {
 			//procura pelo bot�o. Se n�o encontrar, tenta scrollar a tela na horizontal 3 vezes. Se mesmo assim n�o encontrar, devolve a exce��o.
 			while ( !buttonFound ) {
 				try {
-					buttonRectangle =  UnicornWindowControl.findButtonHorizontal(relativeY, relativeWidth, relativeHeight, mask, precision);
+					Rectangle buttonRectangle =  UnicornWindowControl.findButtonHorizontal(relativeY, relativeWidth, relativeHeight, mask, precision);
+					targetButtonRectangle.x = buttonRectangle.x;
+					targetButtonRectangle.y = buttonRectangle.y;
+					targetButtonRectangle.width = buttonRectangle.width;
+					targetButtonRectangle.height = buttonRectangle.height;
 					buttonFound = true;
 				} catch (ButtonNotFoundException e) {
 					if ( scrollCounter >= 4 ) {
@@ -76,22 +78,15 @@ public class ButtonCheck implements GameAction {
 		} else {
 			//Se x e y são >= 0, então o botão fica em ponto específico
 			try {
-				buttonRectangle =  UnicornWindowControl.findButton(relativeX, relativeY, relativeWidth, relativeHeight, mask, precision);
+				Rectangle buttonRectangle =  UnicornWindowControl.findButton(relativeX, relativeY, relativeWidth, relativeHeight, mask, precision);
 			} catch (ButtonNotFoundException e) {
 				return false;
 			}
 		}
 
-		UnicornWindowControl.clickOnButton(buttonRectangle);
 
 		return true;
 		
-	}
-	
-	@Override
-	public Boolean execute(Integer target) {
-		throw new UnsupportedOperationException("Error on button check: " + this.name + "\r\n "
-												+ "ButtonCheck does not need 'target' param");
 	}
 
 	public String getName() {

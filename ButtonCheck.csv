@@ -1,0 +1,63 @@
+Name,x,y,width,height,gameWidth,gameHeight,xPercent,yPercent,widthPercent,heightPercent,File Name,precision
+Open Crystal Dungeon,xxx,404,223,207,1336,752,-1.0000,0.5372,0.1669,0.2753,button-crystaldungeon.png,0.8500
+Open Gold Purchase Screen,733,16,53,54,1336,752,0.5487,0.0213,0.0397,0.0718,button-opengoldpuchase.png,0.8500
+Buy Gold,135,476,257,60,1336,752,0.1010,0.6330,0.1924,0.0798,button-buygold.png,0.8500
+Open Crystal Dungeon Sweep,384,638,111,109,1336,752,0.2874,0.8484,0.0831,0.1449,button-opencrystaldungeonsweep.png,0.8500
+Open Navigation Bar,1233,36,74,41,1348,758,0.9147,0.0475,0.0549,0.0541,button-opennavigationbar.png,0.8500
+Close Navigation Bar,1241,30,61,39,1348,758,0.9206,0.0396,0.0453,0.0515,button-closenavigationbar.png,0.8500
+Open Hero Page,1213,116,116,116,1348,758,0.8999,0.1530,0.0861,0.1530,button-openheropage.png,0.8500
+Open Quest Page,1212,381,116,116,1348,758,0.8991,0.5026,0.0861,0.1530,button-openquestpage.png,0.8500
+Open Friends Page,1212,508,116,116,1348,758,0.8991,0.6702,0.0861,0.1530,button-openfriendspage.png,0.8500
+Open To Do List,1212,629,116,116,1348,758,0.8991,0.8298,0.0861,0.1530,button-opentodolist.png,0.8500
+Sweep Crystal Dungeon,1111,618,111,109,1348,758,0.8242,0.8153,0.0823,0.1438,button-cd-sweepavailable.png,0.8500
+Sweep Crystal Dungeon Running,1111,619,110,107,1348,758,0.8242,0.8166,0.0816,0.1412,button-cd-sweeprunning.png,0.8500
+Sweep Crystal Dungeon Completed,1111,618,110,109,1348,758,0.8242,0.8153,0.0816,0.1438,button-cd-sweepcompleted.png,0.8500
+Crystal Dungeon Chances Over,722,645,59,63,1348,758,0.5356,0.8509,0.0438,0.0831,button-cd-chancesover.png,0.8500
+Return,46,11,96,93,1348,758,0.0341,0.0145,0.0712,0.1227,button-return.png,0.8500
+Minimize Chat,461,598,86,33,1348,758,0.3420,0.7889,0.0638,0.0435,button-minimizechat.png,0.8500
+Open War Guardian,313,510,148,199,1348,758,0.2322,0.6728,0.1098,0.2625,button-warguardian.png,0.8500
+Go! Awaken 1,986,225,133,46,1348,758,0.7315,0.2968,0.0987,0.0607,button-goawaken.png,0.8500
+Go! Awaken 2,986,465,133,46,1348,758,0.7315,0.6135,0.0987,0.0607,button-goawaken.png,0.8500
+Click Awaken Essence,388,471,90,91,1348,758,0.2878,0.6214,0.0668,0.1201,,0.8500
+Open Legend Stage Right,630,492,386,141,1348,758,0.4674,0.6491,0.2864,0.1860,button-legendstage.png,0.8500
+x3 Sweep,913,617,110,107,1348,758,0.6773,0.8140,0.0816,0.1412,button-x3sweep.png,0.8500
+Sweep More (Legend),595,573,149,63,1348,758,0.4414,0.7559,0.1105,0.0831,button-sweepmore-legend.png,0.8500
+Buy Sweep Chances,554,385,254,80,1348,758,0.4110,0.5079,0.1884,0.1055,button-buysweepchances.png,0.8500
+Close Buy Sweep Chances Dialog,954,192,53,52,1348,758,0.7077,0.2533,0.0393,0.0686,button-closebuysweepchancesdialog.png,0.8500
+Close Awaken Synth Page,1007,15,94,91,1348,758,0.7470,0.0198,0.0697,0.1201,button-closeawakensynthpage.png,0.8500
+Close Hero Page,1201,35,77,74,1348,758,0.8909,0.0462,0.0571,0.0976,button-closeheropage.png,0.8500
+Open Proving Grounds,xxx,276,200,139,1348,758,-1.0000,0.3641,0.1484,0.1834,button-openprovingrounds.png,0.8500
+Sweep Proving Grounds,607,579,136,153,1348,758,0.4503,0.7639,0.1009,0.2018,button-sweepprovinggrounds.png,0.8500
+Open Astrologer,xxx,489,118,139,1348,758,-1.0000,0.6451,0.0875,0.1834,button-astrologer.png,0.8500
+Do Horoscope,1142,602,179,59,1348,758,0.8472,0.7942,0.1328,0.0778,button-dohoroscope.png,0.8500
+Close Buy Gold,1053,6,73,75,1348,758,0.7812,0.0079,0.0542,0.0989,button-closebuygold.png,0.8500
+Open FB Friends,213,114,223,49,1348,758,0.1580,0.1504,0.1654,0.0646,button-openfbfriends.png,0.8500
+Open Crystal Dungeon Sweep Maxed,512,645,336,101,1348,758,0.3798,0.8509,0.2493,0.1332,button-opencrystaldungeonsweep-maxed.png,0.8500
+Open Arena,xxx,264,141,134,1348,758,-1.0000,0.3483,0.1046,0.1768,button-openarena.png,0.8500
+Challenge Stronger Opponent,485,629,149,37,1348,758,0.3598,0.8298,0.1105,0.0488,button-challenge.png,0.8500
+Open Crystal Spire,xxx,239,130,132,1348,758,-1.0000,0.3153,0.0964,0.1741,button-opencrystalspire.png,0.8500
+Open Crystal Spire Sweep,857,647,107,107,1348,758,0.6358,0.8536,0.0794,0.1412,button-opencrystalspiresweep.png,0.8500
+Sweep Crystal Spire,582,661,182,64,1348,758,0.4318,0.8720,0.1350,0.0844,button-sweepcrystalspire.png,0.8500
+Confirm Sweep Crystal Spire,728,491,143,56,1348,758,0.5401,0.6478,0.1061,0.0739,button-confirmsweepcrystalspire.png,0.8500
+Sweep Crystal Spire Cancel Dialog,1128,164,22,22,1348,758,0.8368,0.2164,0.0163,0.0290,button-sweepcrystalspirecanceldialog.png,0.8500
+Sweep Crystal Spire Close Dialog,599,546,151,60,1348,758,0.4444,0.7203,0.1120,0.0792,button-sweepcrystalspireclosedialog.png,0.8500
+Close Crystal Spire,1127,43,94,91,1348,758,0.8361,0.0567,0.0697,0.1201,button-closecrystalspire.png,0.8500
+Cancel Proving Grounds,1188,357,47,45,1348,758,0.8813,0.4710,0.0349,0.0594,button-cancelprovinggrounds.png,0.8500
+Open Academy,xxx,326,111,100,1348,758,-1.0000,0.4301,0.0823,0.1319,button-academy.png,0.8500
+Claim Iron,156,489,53,52,1348,758,0.1157,0.6451,0.0393,0.0686,button-claimiron.png,0.8500
+Claim Crystal,369,487,58,55,1348,758,0.2737,0.6425,0.0430,0.0726,button-claimcrystal.png,0.8500
+Claim Silver,921,485,57,54,1348,758,0.6832,0.6398,0.0423,0.0712,button-claimsilver.png,0.8500
+Claim Medicine,1136,483,58,55,1348,758,0.8427,0.6372,0.0430,0.0726,button-claimmedicine.png,0.8500
+Claim Academy Stamina,639,452,70,72,1348,758,0.4740,0.5963,0.0519,0.0950,button-claimacademystamina.png,0.8500
+Close Academy,1242,72,93,91,1348,758,0.9214,0.0950,0.0690,0.1201,button-closeacademy.png,0.8500
+Attack,1131,607,95,115,1348,758,0.8390,0.8008,0.0705,0.1517,button-attack.png,0.8500
+Home,0,0,1348,758,1348,758,0.0000,0.0000,1.0000,1.0000,screen-home.png,0.8500
+Screen Commander Equip,1210,0,83,572,1348,758,0.8976,0.0000,0.0616,0.7546,screen-commanderequip.png,0.8500
+Evolve Equip Tab,1116,409,160,79,1348,758,0.8279,0.5396,0.1187,0.1042,button-evolveequip.png,0.8500
+Evolve Equip Tab Selected,996,114,104,97,1348,758,0.7389,0.1504,0.0772,0.1280,screen-evolvetab.png,0.8500
+Synth Page,491,0,364,40,1348,758,0.3642,0.0000,0.2700,0.0528,button-synthpage.png,0.8500
+Stage Sweep Cancel,1262,46,35,38,1348,758,0.9362,0.0607,0.0260,0.0501,button-stagesweepcancel.png,0.8500
+Open Legend Stage Left Cut,315,490,302,144,1348,758,0.2337,0.6464,0.2240,0.1900,button-legendstage-cut.png,0.8500
+Close Synth Page,1024,0,56,54,1348,758,0.7596,0.0000,0.0415,0.0712,button-closesynthpage.png,0.8500
+Confirm No More Heroes,726,489,147,60,1348,758,0.5386,0.6451,0.1091,0.0792,button-confirmnomoreheroes.png,0.8500
+End Battle,861,576,103,101,1348,758,0.6387,0.7599,0.0764,0.1332,button-endbattle.png,0.8500

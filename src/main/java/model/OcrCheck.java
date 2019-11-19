@@ -5,8 +5,9 @@ import java.awt.AWTException;
 import exception.GameWindowNotFoundException;
 import jna.UnicornWindowControl;
 import net.sourceforge.tess4j.TesseractException;
+import test.GuiConsole;
 
-public class OcrCheck implements GameAction {
+public class OcrCheck {
 
 	private String name;
 	private double relativeX;
@@ -16,6 +17,7 @@ public class OcrCheck implements GameAction {
 	private String mask;
 	private String ocrType;
 	private String ocrComparator;
+	private Boolean outlined;
 	
 	/**
 	 * 
@@ -32,32 +34,66 @@ public class OcrCheck implements GameAction {
 
 		UnicornWindowControl.setForegroundWindowByTitle("BlueStacks");
 
-		Integer value = UnicornWindowControl.findOcrInteger(relativeX, relativeY, relativeWidth, relativeHeight, mask, ocrType);
-		
-		if (ocrComparator.equals(
-				OcrComparator.HIGHER_THAN.toString())
-				&& value >= target) {
-			return true;
+		if (ocrType.equals(OcrType.NUMBER_PURE.toString())
+			|| ocrType.equals(OcrType.NUMBER_SPLIT.toString())
+			|| ocrType.equals(OcrType.NUMBER_SUFFIX.toString())) {
+			return doNumberCheck(target);
+		}
+
+		if (ocrType.equals(OcrType.TEXT.toString())) {
+			return doTextCheck(mask);
 		}
 		
-		if (ocrComparator.equals(
-				OcrComparator.LOWER_THAN.toString())
-				&& value <= target) {
-			return true;
+		GuiConsole.println("No Ocr Type found for " + this.name);
+		return false;
+	}
+
+	private Boolean doNumberCheck(Integer target) throws AWTException, TesseractException {
+		try {
+			Integer value = UnicornWindowControl.findOcrInteger(relativeX, relativeY, relativeWidth, relativeHeight, mask, ocrType);
+			GuiConsole.println("Comparing OCR Number");
+			GuiConsole.println("Target: " + target);
+			GuiConsole.println("Value on screen: " + value);
+			
+			if (ocrComparator.equals(
+					OcrComparator.HIGHER_THAN.toString())
+					&& value >= target) {
+				return true;
+			}
+			
+			if (ocrComparator.equals(
+					OcrComparator.LOWER_THAN.toString())
+					&& value <= target) {
+				return true;
+			}
+			
+			if (ocrComparator.equals(
+					OcrComparator.EQUAL_TO.toString())
+					&& value == target) {
+				return true;
+			}
+			
+			return false;
+		} catch (NumberFormatException e) {
+			GuiConsole.println("Parse failed for " + this.name + " check: Screen text is not a number.");
+			return false;
 		}
+		
+	}
+	
+	private Boolean doTextCheck(String target) throws AWTException, TesseractException {
+		String value = UnicornWindowControl.findOcrText(relativeX, relativeY, relativeWidth, relativeHeight, mask, ocrType, outlined).trim();
+		GuiConsole.println("Comparing OCR");
+		GuiConsole.println("Mask: " + target);
+		GuiConsole.println("Value on screen: " + value);
 		
 		if (ocrComparator.equals(
 				OcrComparator.EQUAL_TO.toString())
-				&& value == target) {
+				&& value.equals(target) ) {
 			return true;
 		}
 		
 		return false;
-	}
-	
-	public Boolean execute() {
-		throw new UnsupportedOperationException("Error on ocr check: " + this.name + "\r\n "
-												+ "OcrCheck needs a target value and a OcrComparator.");
 	}
 	
 	public double getRelativeX() {
@@ -119,6 +155,40 @@ public class OcrCheck implements GameAction {
 
 	public void setOcrComparator(String ocrComparator) {
 		this.ocrComparator = ocrComparator;
+	}
+
+	public Boolean getOutlined() {
+		return outlined;
+	}
+
+	public Integer getOutlinedInteger() {
+		if (outlined) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+	
+	public void setOutlined(Boolean outlined) {
+		this.outlined = outlined;
+	}
+	
+	/**
+	 * 
+	 * @param mandatory 0 = false, 1 = true
+	 */
+	public void setOutlined(Integer outlined) {
+		switch (outlined) {
+		case 1:
+			this.outlined = true;
+			break;
+		case 0:
+			this.outlined = false;
+			break;
+		default:
+			this.outlined = false;
+			break;
+		}
 	}
 	
 }

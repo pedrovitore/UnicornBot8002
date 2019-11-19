@@ -1,0 +1,74 @@
+Routine Name,Action Name,Order
+Buy gold 2x,Open Gold Purchase Screen,1
+Buy gold 2x,Buy Gold,2
+Buy gold 2x,Buy Gold Cancel,3
+Buy gold 2x,Buy Gold,4
+Buy gold 2x,Buy Gold Cancel,5
+Buy gold 2x,Close Buy Gold,6
+Buy gold 1x,Open Gold Purchase Screen,1
+Buy gold 1x,Buy Gold,2
+Buy gold 1x,Buy Gold Cancel,3
+Buy gold 1x,Close Buy Gold,4
+Claim FB Stamina,Open Navigation Bar,1
+Claim FB Stamina,Open Friends Page,2
+Claim FB Stamina,Open FB Friends,3
+Claim FB Stamina,Claim FB Stamina,4
+Claim FB Stamina,Send FB Stamina,5
+Claim FB Stamina,Send FB Stamina Cancel Dialog,6
+Claim FB Stamina,Return,7
+Sweep Crystal Dungeon (Maxed),Open Crystal Dungeon,1
+Sweep Crystal Dungeon (Maxed),Open Crystal Dungeon Sweep Maxed,2
+Sweep Crystal Dungeon (Maxed),Sweep Crystal Dungeon,3
+Sweep Crystal Dungeon (Maxed),Sweep Crystal Dungeon Cancel,4
+Sweep Crystal Dungeon (Maxed),Sweep Crystal Dungeon Completed,5
+Sweep Crystal Dungeon (Maxed),Sweep Crystal Dungeon,6
+Sweep Crystal Dungeon (Maxed),Sweep Crystal Dungeon Cancel,7
+Sweep Crystal Dungeon (Maxed),Sweep Crystal Dungeon Completed,8
+Sweep Crystal Dungeon (Maxed),Return,9
+Sweep Crystal Dungeon (Maxed),Return,10
+Spend Arena Chances,Open Arena,1
+Spend Arena Chances,Challenge Stronger Opponent,2
+Spend Arena Chances,Remove Hero 2,3
+Spend Arena Chances,Remove Hero 2,4
+Spend Arena Chances,Remove Hero 2,5
+Spend Arena Chances,Remove Hero 2,6
+Spend Arena Chances,Attack,7
+Spend Arena Chances,Confirm No More Heroes,8
+Spend Arena Chances,Wait Battle End,9
+Sweep Crystal Spire,Open Crystal Spire,1
+Sweep Crystal Spire,Open Crystal Spire Sweep,2
+Sweep Crystal Spire,Sweep Crystal Spire,3
+Sweep Crystal Spire,Confirm Sweep Crystal Spire,4
+Sweep Crystal Spire,Sweep Crystal Spire Cancel Dialog,5
+Sweep Crystal Spire,Sweep Crystal Spire Close Dialog,6
+Sweep Crystal Spire,Sweep Crystal Spire,7
+Sweep Crystal Spire,Confirm Sweep Crystal Spire,8
+Sweep Crystal Spire,Sweep Crystal Spire Cancel Dialog,9
+Sweep Crystal Spire,Sweep Crystal Spire Close Dialog,10
+Sweep Crystal Spire,Close Crystal Spire,11
+Sweep Crystal Spire,Return,12
+Sweep Proving Grounds,Open Proving Grounds,1
+Sweep Proving Grounds,Sweep Proving Grounds,2
+Sweep Proving Grounds,Cancel Proving Grounds,3
+Sweep Proving Grounds,Cancel Proving Grounds,4
+Sweep Proving Grounds,Return,5
+Farm Scepter Material,Open Commander Equips,1
+Farm Scepter Material,Open Scepter,2
+Farm Scepter Material,Evolve Equip Tab,3
+Farm Scepter Material,Select Material 3,4
+Farm Scepter Material,Synth Scroll Right,5
+Farm Scepter Material,Synth Scroll Right,6
+Farm Scepter Material,Synth Scroll Right,7
+Farm Scepter Material,Open Legend Stage Right,8
+Farm Scepter Material,x3 Sweep,9
+Farm Scepter Material,Stage Sweep Cancel,10
+Farm Scepter Material,Stage Sweep Cancel,11
+Farm Scepter Material,Return,12
+Farm Scepter Material,Open Legend Stage Left Cut,13
+Farm Scepter Material,x3 Sweep,14
+Farm Scepter Material,Stage Sweep Cancel,15
+Farm Scepter Material,Stage Sweep Cancel,16
+Farm Scepter Material,Return,17
+Farm Scepter Material,Close Synth Page,18
+Farm Scepter Material,Return,19
+Farm Scepter Material,Return,20

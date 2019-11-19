@@ -1,7 +1,7 @@
 package test;
 import jna.UnicornWindowControl;
-import model.NavigationAction;
 import model.UnicornImage;
+import old.NavigationAction;
 
 public class TesteAction {
 

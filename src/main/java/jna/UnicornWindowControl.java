@@ -5,6 +5,7 @@ import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.event.InputEvent;
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -173,17 +174,18 @@ public class UnicornWindowControl {
 	 * 
 	 * @param distance Value between 0 and 1. Percentage of the screen to be
 	 *                 scrolled.
+	 * @param yPosition	Value between 0 and 1. The target's y position in percentage.
 	 * @throws AWTException
 	 * @throws InterruptedException
 	 */
-	public static void scrollHorizontal(double distance) throws AWTException, InterruptedException {
+	public static void scrollHorizontal(double distance, double yPosition) throws AWTException, InterruptedException {
 		Rectangle gameRectangle = getGameRectangle();
 
 		int initialX = (int) (((gameRectangle.getMaxX() - gameRectangle.getMinX()) / 2)
 				+ (gameRectangle.width * distance / 2));
 		int finalX = (int) (((gameRectangle.getMaxX() - gameRectangle.getMinX()) / 2)
 				- (gameRectangle.width * distance / 2));
-		int y = (int) ((gameRectangle.getMaxY() - gameRectangle.getMinY()) / 2);
+		int y = (int) ((gameRectangle.getMaxY() - gameRectangle.getMinY()) * yPosition);
 
 		Robot bot = new Robot();
 		bot.mouseMove(initialX, y);
@@ -193,6 +195,17 @@ public class UnicornWindowControl {
 
 		// Sleeps 3 seconds after action to wait for scroll delay on android
 		TimeUnit.SECONDS.sleep(3);
+	}
+
+	/**
+	 * 
+	 * @param distance Value between 0 and 1. Percentage of the screen to be
+	 *                 scrolled.
+	 * @throws AWTException
+	 * @throws InterruptedException
+	 */
+	public static void scrollHorizontal(double distance) throws AWTException, InterruptedException {
+		scrollHorizontal(distance, 0.5);
 	}
 
 	/**
@@ -313,14 +326,69 @@ public class UnicornWindowControl {
 		int ocrY = (int) (yPercent * gameImage.getHeight());
 
 		UnicornImage ocrImage = new UnicornImage(gameImage.getSubimage(ocrX, ocrY, ocrWidth, ocrHeight));
+		//ocrImage.transformToGrayscale();
+		//saves OCR image for testing
+		try {
+			ImageIO.write(ocrImage, "png", new File("ocr-sample"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		ITesseract instance = new Tesseract();
+		
+		String screenText = instance.doOCR(ocrImage);
+		Integer number = OcrFormat.formatNumber(screenText, mask, type);
+
+		
+		return number;
+	}
+
+	/**
+	 * Uses OCR to read text on game screen on specified position and converts it to a number.
+	 * 
+	 * @param xPercent      Ranges from 0 to 1. The x value of the button Rectangle,
+	 *                      in percentage relative to game screen width.
+	 * @param yPercent      Ranges from 0 to 1. The y value of the button Rectangle,
+	 *                      in percentage relative to game screen height.
+	 * @param widthPercent  Ranges from 0 to 1. The width of the button Rectangle,
+	 *                      in percentage relative to game screen width.
+	 * @param heightPercent Ranges from 0 to 1. The height of the button Rectangle,
+	 *                      in percentage relative to game screen height.
+	 * @param mask    		Text mask to aid finding the right value. Varies according to OcrType:
+	 * 
+	 * 						NUMBER_SUFFIX: Specify the text that precedes the number. (Ex: Chances: 2, mask = "Chances:")
+	 * 						NUMBER_SPLIT: Specify the that splits the number. (Ex: 76/128, mask = "/")
+	 * 						NUMBER_PURE: Not needed.
+	 * @param outlined    		Set true if text has a bold outline.
+	 * @param Type		    OcrType
+	 * @return Field numeric value.
+	 * @throws AWTException
+	 * @throws ButtonNotFoundException
+	 * @throws TesseractException 
+	 */
+	public static String findOcrText(double xPercent, double yPercent, double widthPercent, double heightPercent,
+			String mask, String type, Boolean outlined) throws AWTException, TesseractException {
+		UnicornImage gameImage = getGameScreen();
+
+		int ocrWidth = (int) (widthPercent * gameImage.getWidth());
+		int ocrHeight = (int) (heightPercent * gameImage.getHeight());
+		int ocrX = (int) (xPercent * gameImage.getWidth());
+		int ocrY = (int) (yPercent * gameImage.getHeight());
+
+		UnicornImage ocrImage = new UnicornImage(gameImage.getSubimage(ocrX, ocrY, ocrWidth, ocrHeight));
+		if (outlined) {
+			OcrFormat.removeTextOutOfBounds(ocrImage);
+			OcrFormat.removeOutlineFromText(ocrImage);
+		}
 
 		ITesseract instance = new Tesseract();
 		String screenText = instance.doOCR(ocrImage);
-		Integer number = OcrFormat.formatNumber(screenText, mask, type);
+		String finalText = OcrFormat.formatText(screenText, mask, type);
 		
-		//ainda falta implementar a leitura de texto.
 		
-		return number;
+		return finalText;
 	}
 
 	/**
